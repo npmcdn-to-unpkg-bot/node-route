@@ -28,11 +28,31 @@ var fs = require('fs');
 //     birthtime: Mon Aug 22 2016 11: 00: 45 GMT + 0800(中国标准时间)
 // }
 
-fs.exists('../plugin.md', function (exists) {
-    if (exists) {
-        console.log('exists');
-    } else {
-        console.log ('no such a file');
-    }
-});
+// fs.exists('../plugin.md', function (exists) {
+//     if (exists) {
+//         console.log('exists');
+//     } else {
+//         console.log ('no such a file');
+//     }
+// });
+
+// fs.readFile('../plugin.md', function (err, data) {
+// 	if (err) {
+// 		console.log(err);
+// 	} else {
+// 		console.log(data.length);   // Buffer
+// 	}
+// });
+
+// fs.readdir('../', function (err, data) {
+// 	if (err) {
+// 		console.log(err);
+// 	} else {
+// 		console.log(data);   // 数组 文件和 文件夹
+// 	}
+// });
+
+// fs.mkdir('./mkdiar');
+
+
 
