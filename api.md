@@ -1,3 +1,5 @@
+
+
 ##  fs
 
 * 文件属性读写
@@ -16,7 +18,8 @@
     2. fs.read
     3. fs.write
     4. fs.close
-    
+
+> 同步时用 Sync 如 readFileSync （用 try catch 捕获异常）
 
 ## url
 
@@ -66,3 +69,10 @@
         */
     ```
 
+* resolve方法可以用于拼接URL
+    ```
+        url.resolve('http://www.example.com/foo/bar', '../baz');
+        /* =>
+        http://www.example.com/baz
+        */
+    ```
