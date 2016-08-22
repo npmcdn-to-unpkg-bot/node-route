@@ -36,7 +36,7 @@
 
 * format方法允许将一个URL对象转换为URL字符串
 
-    ```json
+    ```js
         url.format({
             protocol: 'http:',
             host: 'www.example.com',
@@ -49,7 +49,7 @@
     ```
 * parse方法来将一个URL字符串转换为URL对象
 
-    ```json
+    ```js
         url.parse('http://user:pass@host.com:8080/p/a/t/h?query=string#hash');
         /* =>
         { protocol: 'http:',
