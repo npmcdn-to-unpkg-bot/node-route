@@ -1,0 +1,29 @@
+{
+  "name": "node_lesson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivipllp/node-route.git"
+  },
+  "keywords": [
+    "null"
+  ],
+  "author": "llp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivipllp/node-route/issues"
+  },
+  "homepage": "https://github.com/ivipllp/node-route#readme",
+  "devDependencies": {
+    "express": "^4.14.0",
+    "request": "^2.74.0"
+  }
+}

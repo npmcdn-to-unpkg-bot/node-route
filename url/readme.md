@@ -15,7 +15,7 @@
 
     ```
 
-* format方法允许将一个URL对象转换为URL字符串
+* format 方法允许将一个URL对象转换为URL字符串
 
     ```js
         url.format({
@@ -28,7 +28,7 @@
         'http://www.example.com/p/a/t/h?query=string'
         */
     ```
-* parse方法来将一个URL字符串转换为URL对象
+* parse 方法来将一个URL字符串转换为URL对象
 
     ```js
         url.parse('http://user:pass@host.com:8080/p/a/t/h?query=string#hash');
@@ -47,10 +47,32 @@
         */
     ```
 
-* resolve方法可以用于拼接URL
+* resolve 方法可以用于拼接URL
     ```
         url.resolve('http://www.example.com/foo/bar', '../baz');
         /* =>
         http://www.example.com/baz
         */
     ```
+
+## path  
+    >  简化路径相关操作
+
+* normalize 将传入的路径转换为标准路径
+    > 标准化之后的路径里的斜杠在Windows系统下是\，而在*nix系统下是/。如果想保证任何系统下都使用/作为路径分隔符的话，需要用 ```<strong>.replace(/\\/g, '/')</strong> ```再替换一下标准路径。
+* join 将传入的多个路径拼接为标准路径
+    ```
+        path.join('foo/', 'baz/', '../bar'); // => "foo/bar"
+    ```
+* extname 获得不同文件额扩展名
+    ```
+        path.extname('foo/bar.js'); // => ".js"
+    ```
+
+
+
+
+
+
+
+
