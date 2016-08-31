@@ -17,4 +17,3 @@
     * superagent & cherrio  [爬虫](https://github.com/alsotang/node-lessons/blob/master/lesson3/README.md)
 
 
-https://www.google.com/images/errors/robot.png

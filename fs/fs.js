@@ -12,7 +12,7 @@ var fs = require('fs');
 // });
 // =>
 // {
-//     dev: -804827945,
+//     dev: -804827945,send
 //     mode: 33206,
 //     nlink: 1,
 //     uid: 0,

@@ -25,22 +25,22 @@ var server = app.listen(3000, function () {
 
 
 
-function b (tx, tax) {
-    var n = 5;
-    var res = 0;
-    res = (n*tx - 15*tax) / (n*55 - 225);
-    console.log('b: ' + res)
-    return res;
-}
+// function b (tx, tax) {
+//     var n = 5;
+//     var res = 0;
+//     res = (n*tx - 15*tax) / (n*55 - 225);
+//     console.log('b: ' + res)
+//     return res;
+// }
 
-function a (tx, tax) {
-    var r = 0;
+// function a (tx, tax) {
+//     var r = 0;
 
-    // r = (tax - b(tx, tax) * 15) / 5;
-    r = tx/5 - b (tx, tax) * 3;
-    console.log('a: '+ r);
-    return r;
-}
+//     // r = (tax - b(tx, tax) * 15) / 5;
+//     r = tx/5 - b (tx, tax) * 3;
+//     console.log('a: '+ r);
+//     return r;
+// }
 
-a(tx, tax);
+// a(tx, tax);
 
