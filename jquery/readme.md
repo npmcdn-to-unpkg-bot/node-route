@@ -1,5 +1,6 @@
 ## DOM 方法
 
+### HTML
 * add(在里面加元素)      addBack('把 . 之前的元素加上')  
 * clone()
 * appendTo()
@@ -10,10 +11,9 @@
 * prepend()
 * remove() - 删除被选元素（及其子元素）
 * empty() - 从被选元素中删除子元素
-* 
-* 
-* 
-* 
+* html()    设置或返回所选元素的内容
+* text()    设置或返回所选元素的文本内容
+* val()     设置或返回表单字段的值
 
 * attr() prop()    用于获取/设置属性值
 	> 对于HTML元素本身就带有的固有属性，在处理时，使用prop方法。
@@ -29,9 +29,31 @@
 * removeClass()
 * toggleClass()
 
-* html()    设置或返回所选元素的内容
-* text()    设置或返回所选元素的文本内容
-* val()     设置或返回表单字段的值
+
+### 遍历
+* parent()  返回被选元素的直接父元素
+* parents() 方法返回被选元素的所有祖先元素，它一路向上直到文档的根元素 (<html>)。
+
+    > parents(ele) 可选参数来过滤对祖先元素的搜索。
+
+* parentsUntil() 返回介于两个给定元素之间的所有祖先元素
+* find()        后代 
+* children()    子代
+* siblings()    所有兄弟元素
+* next()
+* nextAll()
+* nextUntil()
+* prev()
+* first()
+* last()
+* eq()          返回被选元素中带有指定索引号的元素。
+* filter( function(index) )   function 可选 
+    -  :even 和 :odd
+    ```
+         $('li').filter(':even').css(...);
+    ```
+* not()         同 filter()
+
 
 * resize()
 * keyup()
@@ -40,10 +62,8 @@
 * filter()
 * hover()  === mouseover()+mouseout()
 * end()  回到之前的状态 多用于 find() 之后
-* find() 后代     children()  子代
 *  
-*  
-*  
+
 ### 动画
 
 #### 自带动画
