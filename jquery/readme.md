@@ -1,6 +1,29 @@
+
+```
+        .--.
+       /    \
+      ## a  a
+      (   '._)
+       |'-- |
+     _.\___/_   ___jquery___
+   ."\> \Y/|<'.  '._.-'
+  /  \ \_\/ /  '-' /
+  | --'\_/|/ |   _/
+  |___.-' |  |`'`
+    |     |  |
+    |    / './
+   /__./` | |
+      \   | |
+       \  | |
+       ;  | |
+       /  | |
+ dsb  |___\_.\_
+      `-"--'---'
+```
+
 ## DOM 方法
 
-### HTML
+### [HTML/css](http://www.runoob.com/jquery/jquery-ref-html.html)
 * add(在里面加元素)      addBack('把 . 之前的元素加上')  
 * clone()
 * appendTo()
@@ -14,11 +37,14 @@
 * html()    设置或返回所选元素的内容
 * text()    设置或返回所选元素的文本内容
 * val()     设置或返回表单字段的值
-
+* insertAfter()
+* insertBefore()
+* prepend()     在被选元素的开头插入内容
+* 
 * attr() prop()    用于获取/设置属性值
 	> 对于HTML元素本身就带有的固有属性，在处理时，使用prop方法。
 	> 对于HTML元素我们自己自定义的DOM属性，在处理时，使用attr方法。
-    
+
     ```
         $(ele).attr("href","baidu.com");
     ```
@@ -32,7 +58,7 @@
 
 ### 遍历
 * parent()  返回被选元素的直接父元素
-* parents() 方法返回被选元素的所有祖先元素，它一路向上直到文档的根元素 (<html>)。
+* parents() 方法返回被选元素的所有祖先元素，它一路向上直到文档的根元素 (<html>)
 
     > parents(ele) 可选参数来过滤对祖先元素的搜索。
 
@@ -54,7 +80,10 @@
     ```
 * not()         同 filter()
 
+### [事件](http://www.runoob.com/jquery/jquery-ref-events.html)
 
+
+### 其他
 * resize()
 * keyup()
 * toArray()
