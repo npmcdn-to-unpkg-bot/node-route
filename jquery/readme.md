@@ -17,8 +17,8 @@
 
 * attr() prop()    用于获取/设置属性值
 	> 对于HTML元素本身就带有的固有属性，在处理时，使用prop方法。
-	
 	> 对于HTML元素我们自己自定义的DOM属性，在处理时，使用attr方法。
+    
     ```
         $(ele).attr("href","baidu.com");
     ```
