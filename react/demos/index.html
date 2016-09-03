@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../react/build/react.js"></script>
+    <script src="../react/build/react-dom.js"></script>
+    <script src="../react/build/browser.min.js"></script>
+    <style>
+            
+        .masdy {
+            height: 100px;
+        } 
+
+    </style>
+</head>
+<body>
+    <div id="example"></div>
+
+    <script type="text/babel">
+        var Nodelist = React.createClass({
+            render: function() {
+                var name = this.props.name;
+                return (
+                    <ul>
+                        {
+                            React.Children.map(this.props.children, function(child) {
+                                return <li className={name}> {child} </li>;
+                            })
+                        }
+                    </ul>
+                );
+            }
+        });
+
+        ReactDOM.render(
+            <Nodelist name="masdy">
+                <span>list1</span>
+                <span>list2</span>
+            </Nodelist>
+            ,
+            document.querySelector('#example')
+        );
+
+    </script>
+
+</body>
+</html>
